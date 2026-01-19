@@ -11,7 +11,7 @@ public class StatusController {
     @GetMapping("/api/v1/status")
     public NewsSignal getStatus() {
         return new NewsSignal(
-                "Тест my first project",
+                "AiPulse Media Live",
                 "Працює",
                 "Контекст",
                 "http://test.com",
