@@ -8,6 +8,7 @@ public class NewsSignal {
     private String context;
     private String sourceURL;
     private LocalDateTime publishedAt;
+    private int views;
 
     public String getTitle() {
         return title;
@@ -29,13 +30,16 @@ public class NewsSignal {
         return publishedAt;
     }
 
-    public NewsSignal(String title, String summary, String context, String sourceURL, LocalDateTime publishedAt) {
+    public int getViews() {
+        return views;
+    }
+
+    public NewsSignal(String title, String summary, String context, String sourceURL, LocalDateTime publishedAt,int views) {
         this.title = title;
         this.summary = summary;
         this.context = context;
         this.sourceURL = sourceURL;
         this.publishedAt = publishedAt;
-
-
+        this.views = views;
     }
 }
