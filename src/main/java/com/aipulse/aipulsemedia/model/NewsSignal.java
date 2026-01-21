@@ -1,7 +1,9 @@
 package com.aipulse.aipulsemedia.model;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import java.time.LocalDateTime;
 
+@JsonPropertyOrder({ "id", "title", "summary", "context", "sourceURL", "publishedAt", "views" })
 public class NewsSignal {
     private long id;
     // Онови конструктор, щоб він приймав id першим параметром

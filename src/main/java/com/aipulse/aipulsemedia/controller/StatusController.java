@@ -4,7 +4,6 @@ import com.aipulse.aipulsemedia.model.NewsSignal;
 import com.aipulse.aipulsemedia.service.NewsService;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
